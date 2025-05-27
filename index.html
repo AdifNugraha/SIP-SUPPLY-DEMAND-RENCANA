@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/BatasKabupaten_1.js"></script><script src="layers/BatasKecamatan_2.js"></script><script src="layers/RuteJenang22shortest_path_3.js"></script><script src="layers/RuteJenangAsiaAminahrute_jenang_asia_aminah_4.js"></script><script src="layers/RuteJenangBintangKurniashortest_path_5.js"></script><script src="layers/RuteJenangKaromahshortest_path_6.js"></script><script src="layers/RuteJenangKudus1shortest_path_7.js"></script><script src="layers/RuteJenangKudusArminashortest_path_8.js"></script><script src="layers/RuteJenangKudusBarokahAslirute_jenang_kudus_barokah_asli_9.js"></script><script src="layers/RuteJenangKudusHikmahrute_jenang_kudus_hikmah_10.js"></script><script src="layers/RuteJenangKudusMakYatirute_jenang_kudus_mak_yati_11.js"></script><script src="layers/RuteJenangKudusMenarashortest_path_12.js"></script><script src="layers/RuteJenangMarlinashortest_path_13.js"></script><script src="layers/RuteJenangMubarokshortest_path_14.js"></script><script src="layers/RuteJenangRasaAbadiKudusrute_jenang_rasa_abadi_kudus_15.js"></script><script src="layers/RuteJenangYasminshortest_path_16.js"></script><script src="layers/RutePusatJenangMataharirute_pusat_jenang_matahari_17.js"></script><script src="layers/Kelapakelapa_18.js"></script><script src="layers/DemandKelapademand_kelapa_19.js"></script><script src="layers/SupplyKelapatitik_supply_kelapa_20.js"></script><script src="layers/RuteKopiMuriaAffaniKajarshortest_path_21.js"></script><script src="layers/RuteKopiMuriaAnarkopirute_kopi_muria_anarkopi_22.js"></script><script src="layers/RuteKopiMuriaDewi29shortest_path_23.js"></script><script src="layers/RuteKopiMuriaIthengshortest_path_24.js"></script><script src="layers/RuteKopiMuriaMuracorute_kopi_muria_muraco_25.js"></script><script src="layers/RuteKopiMuriaNimatshortest_path_26.js"></script><script src="layers/RuteKopiMuriaOtentikshortest_path_27.js"></script><script src="layers/RuteKopiMuriaWilhelminashortest_path_28.js"></script><script src="layers/RuteKopiMuriaZaynarute_kopi_muria_zayna_29.js"></script><script src="layers/Kopikopi_30.js"></script><script src="layers/DemandKopi_31.js"></script><script src="layers/SupplyKopi_32.js"></script><script src="layers/RuteAgenTebuPakMujiKudusshortest_path_33.js"></script><script src="layers/RuteKebonTeburute_kebon_tebu_34.js"></script><script src="layers/RuteRumahGulaKudusrute_rumah_gula_kudus_35.js"></script><script src="layers/RuteSirupCapManggisrute_sirup_cap_manggis_36.js"></script><script src="layers/RuteSirupMuriaAgungrute_sirup_muria_agung_37.js"></script><script src="layers/RuteSirupParijothoAlammurute_sirup_parijotho_alammu_38.js"></script><script src="layers/RuteSirupParijothoMeethosrute_sirup_parijoto_meethos_39.js"></script><script src="layers/RuteSirupPopirute_sirup_popi_40.js"></script><script src="layers/RuteSirupYogasDelimarute_sirup_yogas_delima_41.js"></script><script src="layers/RuteSuplyerTebuIjodanMesinTebuIjoshortest_path_42.js"></script><script src="layers/RuteAgenTebuIjoKudusBapakZidirute_agen_tebu_ijo_kudus_bapak_zidi_43.js"></script><script src="layers/Tebutebu_44.js"></script><script src="layers/TitikDemandTebu_45.js"></script><script src="layers/TitikSuplyTebu_46.js"></script><script src="layers/JaringanJalanKudus_47.js"></script>
+        <script src="styles/BatasKabupaten_1_style.js"></script><script src="styles/BatasKecamatan_2_style.js"></script><script src="styles/RuteJenang22shortest_path_3_style.js"></script><script src="styles/RuteJenangAsiaAminahrute_jenang_asia_aminah_4_style.js"></script><script src="styles/RuteJenangBintangKurniashortest_path_5_style.js"></script><script src="styles/RuteJenangKaromahshortest_path_6_style.js"></script><script src="styles/RuteJenangKudus1shortest_path_7_style.js"></script><script src="styles/RuteJenangKudusArminashortest_path_8_style.js"></script><script src="styles/RuteJenangKudusBarokahAslirute_jenang_kudus_barokah_asli_9_style.js"></script><script src="styles/RuteJenangKudusHikmahrute_jenang_kudus_hikmah_10_style.js"></script><script src="styles/RuteJenangKudusMakYatirute_jenang_kudus_mak_yati_11_style.js"></script><script src="styles/RuteJenangKudusMenarashortest_path_12_style.js"></script><script src="styles/RuteJenangMarlinashortest_path_13_style.js"></script><script src="styles/RuteJenangMubarokshortest_path_14_style.js"></script><script src="styles/RuteJenangRasaAbadiKudusrute_jenang_rasa_abadi_kudus_15_style.js"></script><script src="styles/RuteJenangYasminshortest_path_16_style.js"></script><script src="styles/RutePusatJenangMataharirute_pusat_jenang_matahari_17_style.js"></script><script src="styles/Kelapakelapa_18_style.js"></script><script src="styles/DemandKelapademand_kelapa_19_style.js"></script><script src="styles/SupplyKelapatitik_supply_kelapa_20_style.js"></script><script src="styles/RuteKopiMuriaAffaniKajarshortest_path_21_style.js"></script><script src="styles/RuteKopiMuriaAnarkopirute_kopi_muria_anarkopi_22_style.js"></script><script src="styles/RuteKopiMuriaDewi29shortest_path_23_style.js"></script><script src="styles/RuteKopiMuriaIthengshortest_path_24_style.js"></script><script src="styles/RuteKopiMuriaMuracorute_kopi_muria_muraco_25_style.js"></script><script src="styles/RuteKopiMuriaNimatshortest_path_26_style.js"></script><script src="styles/RuteKopiMuriaOtentikshortest_path_27_style.js"></script><script src="styles/RuteKopiMuriaWilhelminashortest_path_28_style.js"></script><script src="styles/RuteKopiMuriaZaynarute_kopi_muria_zayna_29_style.js"></script><script src="styles/Kopikopi_30_style.js"></script><script src="styles/DemandKopi_31_style.js"></script><script src="styles/SupplyKopi_32_style.js"></script><script src="styles/RuteAgenTebuPakMujiKudusshortest_path_33_style.js"></script><script src="styles/RuteKebonTeburute_kebon_tebu_34_style.js"></script><script src="styles/RuteRumahGulaKudusrute_rumah_gula_kudus_35_style.js"></script><script src="styles/RuteSirupCapManggisrute_sirup_cap_manggis_36_style.js"></script><script src="styles/RuteSirupMuriaAgungrute_sirup_muria_agung_37_style.js"></script><script src="styles/RuteSirupParijothoAlammurute_sirup_parijotho_alammu_38_style.js"></script><script src="styles/RuteSirupParijothoMeethosrute_sirup_parijoto_meethos_39_style.js"></script><script src="styles/RuteSirupPopirute_sirup_popi_40_style.js"></script><script src="styles/RuteSirupYogasDelimarute_sirup_yogas_delima_41_style.js"></script><script src="styles/RuteSuplyerTebuIjodanMesinTebuIjoshortest_path_42_style.js"></script><script src="styles/RuteAgenTebuIjoKudusBapakZidirute_agen_tebu_ijo_kudus_bapak_zidi_43_style.js"></script><script src="styles/Tebutebu_44_style.js"></script><script src="styles/TitikDemandTebu_45_style.js"></script><script src="styles/TitikSuplyTebu_46_style.js"></script><script src="styles/JaringanJalanKudus_47_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
